@@ -50,6 +50,9 @@ bower.json
 # config of Visual Code
 .metals/
 
+# node_modules of Visual Code
+node_modules/
+
 
 # End of https://www.gitignore.io/api/rails
 
