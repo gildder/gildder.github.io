@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/rails
 
+# node
+node_modules
+
 ### Rails ###
 *.rbc
 capybara-*.html
