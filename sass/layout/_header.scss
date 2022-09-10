@@ -30,13 +30,13 @@
             @include position(relative);
             @include size(21px, 1px);
             display: inline-block;
-            background: $color-heading;
+            background: $color-base;
             @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
             &:before,
             &:after {
                 @include position(absolute, $left: 0);
-                background: $color-heading;
+                background: $color-base;
                 content: " ";
             }
 
@@ -157,7 +157,7 @@
 		@include position(relative);
 		display: block;
 		@include font($size: 13px, $weight: 600, $family: $font-family-base);
-        color: $color-white;
+        color: $color-base;
 		text-transform: uppercase;
 		line-height: 55px;
 		padding: 20px;
@@ -188,7 +188,7 @@
     /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
     .header {
-        background: $color-white;
+        background: $color-base;
 
         .navbar-toggle {
             display: block;
@@ -242,7 +242,7 @@
     /* Navbar Nav */
     .header {
         .nav-item-child {
-            color: $color-heading;
+            color: $color-base;
             line-height: 1.4;
             padding: 12px 12px 12px 15px;
         }
@@ -300,7 +300,7 @@
     .page-on-scroll {
         .header {
             .navbar {
-                background: $color-white;
+                background: $color-base;
                 border-bottom-color: #f0f0f0;
                 @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
@@ -316,7 +316,7 @@
             }
 
             .nav-item-child {
-                color: $color-heading;
+                color: $color-base;
                 @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
         }

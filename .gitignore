@@ -56,6 +56,8 @@ bower.json
 # node_modules of Visual Code
 node_modules/
 
+# Visual Code
+.vscode/
 
 # End of https://www.gitignore.io/api/rails
 

@@ -4,19 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gilberet/gildder.github.io.git"
+    "url": "git+https://github.com/gilberet/gildder.github.io.git"
   },
   "author": "gildder",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Gilberet/gildder.github.io/issues"
+    "url": "https://github.com/gilberet/gildder.github.io/issues"
   },
-  "homepage": "https://github.com/Gilberet/gildder.github.io#readme",
+  "homepage": "https://github.com/gilberet/gildder.github.io#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.9"
+  },
+  "dependencies": {}
 }
