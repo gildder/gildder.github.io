@@ -513,7 +513,7 @@ h4 {
   width: 21px;
   height: 1px;
   display: inline-block;
-  background: #023059;
+  background: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -547,7 +547,7 @@ h4 {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 .header .navbar-toggle:hover .toggle-icon {
-  background: #023059;
+  background: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -555,7 +555,7 @@ h4 {
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
   height: 1px;
-  background: #023059;
+  background: #fff;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -633,7 +633,7 @@ h4 {
   font-size: 13px;
   font-weight: 600;
   font-family: Hind, sans-serif;
-  color: #023059;
+  color: #515769;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -653,7 +653,7 @@ h4 {
   left: 0;
   width: 9px;
   height: 2px;
-  background: #023059;
+  background: #fff;
   opacity: 0;
   content: " ";
   transition-duration: 400ms;
@@ -766,7 +766,7 @@ h4 {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #023059;
+    color: #fff;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
