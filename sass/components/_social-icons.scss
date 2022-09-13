@@ -1,21 +1,26 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../mixins' as mx;
+
 /*------------------------------------------------------------------
   	[Social Icons]
 ------------------------------------------------------------------*/
 
 .social-icons {
 	display: inline-block;
-	@include size(40px);
-	@include font($size: 16px);
-	color: $color-white;
+	@include mx.size(40px);
+	@include mx.font($size: 16px);
+	color: mx.$color-white;
 	text-align: center;
 	border-radius: 50%;
 	vertical-align: middle;
 	padding: 11px;
-	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	@include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
 	&:hover {
-		color: $color-heading;
-		background: $color-white;
-		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+		color: mx.$color-heading;
+		background: mx.$color-white;
+		@include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 	}
 }

@@ -1,3 +1,9 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../mixins' as mx;
+
+
 /*------------------------------------------------------------------
   	[Header]
 ------------------------------------------------------------------*/
@@ -14,61 +20,61 @@
 	.navbar {
 		margin-bottom: 0;
         border-bottom: 1px solid rgba(255,255,255,.2);
-        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+        @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 	}
 }
 
 /* Navbar Toggle */
 .header {
     .navbar-toggle {
-        @include size(25px);
+        @include mx.size(25px);
         border: none;
         padding: 0;
         margin: 35px 0;
 
         .toggle-icon {
-            @include position(relative);
-            @include size(21px, 1px);
+            @include mx.position(relative);
+            @include mx.size(21px, 1px);
             display: inline-block;
-            background: $color-white;
-            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            background: mx.$color-white;
+            @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
             &:before,
             &:after {
-                @include position(absolute, $left: 0);
-                background: $color-base;
+                @include mx.position(absolute, $left: 0);
+                background: mx.$color-base;
                 content: " ";
             }
 
             &:before {
-                @include size(10px, 1px);
+                @include mx.size(10px, 1px);
                 bottom: 10px;
-                @include rotate(0);
-                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                @include mx.rotate(0);
+                @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
             
             &:after {
-                @include size(16px, 1px);
+                @include mx.size(16px, 1px);
                 top: -5px;
-                @include rotate(0);
-                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                @include mx.rotate(0);
+                @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
         }
 
         &:hover {
             .toggle-icon {
-                background: $color-white;
-                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                background: mx.$color-white;
+                @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
                 &:before,
                 &:after {
-            		@include size(21px, 1px);
-                    background: $color-white;
-                	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            		@include mx.size(21px, 1px);
+                    background: mx.$color-white;
+                	@include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
                 }
 
                 &.is-clicked {
-                    @include bg-opacity($color-heading, 0);
+                    @include mx.bg-opacity(mx.$color-heading, 0);
                 }
             }
         }
@@ -78,7 +84,7 @@
 /* Navbar Logo */
 .header {
     .logo {
-        @include size(100px);
+        @include mx.size(100px);
         float: left;
         max-height: 95px;
         line-height: 65px;
@@ -96,7 +102,7 @@
 
     .logo-img {
         display: inline-block;
-        @include size(64px, auto);
+        @include mx.size(64px, auto);
         max-width: 100%;
         max-height: 100%;
         vertical-align: middle;
@@ -104,12 +110,12 @@
 
     .logo-img-main {
         display: inline-block;
-        @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+        @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
     }
 
     .logo-img-active {
         display: none;
-        @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+        @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
     }
 }
 
@@ -125,7 +131,7 @@
 /* Nav */
 .header {
 	.nav-item {
-		@include position(relative);
+		@include mx.position(relative);
 		display: block;
 
 		&:last-child {
@@ -138,7 +144,7 @@
             .nav-item-hover {
                 &:after {
                     opacity: 1;
-                    @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+                    @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
                 }
             }
         }
@@ -147,21 +153,21 @@
             .nav-item-hover {
                 &:after {
                     opacity: 1;
-                    @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+                    @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
                 }
             }
         }
 	}
 	
 	.nav-item-child {
-		@include position(relative);
+		@include mx.position(relative);
 		display: block;
-		@include font($size: 13px, $weight: 600, $family: $font-family-base);
-        color: $color-heading;
+		@include mx.font($size: 13px, $weight: 600, $family: mx.$font-family-base);
+        color: mx.$color-heading;
 		text-transform: uppercase;
 		line-height: 55px;
 		padding: 20px;
-        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+        @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
         &:hover,
         &:focus {
@@ -170,25 +176,25 @@
 	}
 
     .nav-item-hover {
-        @include position(relative);
+        @include mx.position(relative);
 
         &:after {
-            @include position(absolute, $top: 45px, $left: 0);
-            @include size(9px, 2px);
-            background: $color-white;
+            @include mx.position(absolute, $top: 45px, $left: 0);
+            @include mx.size(9px, 2px);
+            background: mx.$color-white;
             opacity: 0;
             content: " ";
-            @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+            @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
         }
     }
 }
 
 /* Media Queries below 991px */
-@media (max-width: $screen-sm-max) {
+@media (max-width: mx.$screen-sm-max) {
     /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
     .header {
-        background: $color-base;
+        background: mx.$color-base;
 
         .navbar-toggle {
             display: block;
@@ -222,7 +228,7 @@
     /* Menu Container */
     .header {
         .menu-container {
-            @include clearfix;
+            @include mx.clearfix;
         }
     }
 
@@ -242,21 +248,21 @@
     /* Navbar Nav */
     .header {
         .nav-item-child {
-            color: $color-base;
+            color: mx.$color-base;
             line-height: 1.4;
             padding: 12px 12px 12px 15px;
         }
 
 		.nav-item-hover {
 			&:after {
-		        @include position(absolute, $top: 19px);
+		        @include mx.position(absolute, $top: 19px);
 		    }
         }
     }
 }
 
 /* Media Queries below 767px */
-@media (max-width: $screen-xs-max) {
+@media (max-width: mx.$screen-xs-max) {
     /* Menu Container */
     .header {
         .menu-container {
@@ -286,7 +292,7 @@
 }
 
 /* Media Queries above 992px */
-@media (min-width: $screen-md-min) {
+@media (min-width: mx.$screen-md-min) {
     /* Navbar */
     .header {
         .navbar-nav-right {
@@ -296,28 +302,28 @@
 }
 
 /* Page On Scroll */
-@media (min-width: $screen-md-min) {
+@media (min-width: mx.$screen-md-min) {
     .page-on-scroll {
         .header {
             .navbar {
-                background: $color-base;
+                background: mx.$color-base;
                 border-bottom-color: #f0f0f0;
-                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
 
             .logo-img-main {
                 display: none;
-                @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+                @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
             }
             
             .logo-img-active {
                 display: inline-block;
-                @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+                @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
             }
 
             .nav-item-child {
-                color: $color-white;
-                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                color: mx.$color-white;
+                @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
         }
     }

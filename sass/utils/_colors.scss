@@ -1,24 +1,29 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../variables' as vr;
+
 /*------------------------------------------------------------------
   	[Text Colors]
 ------------------------------------------------------------------*/
 
-.color-base { color: $color-base !important; }
-.color-white { color: $color-white !important; }
-.color-heading { color: $color-heading !important; }
-.color-subtitle { color: $color-subtitle !important; }
-.color-link { color: $color-link !important; }
-.color-link-hover { color: $color-link-hover !important; }
-.color-sky-light { color: $color-sky-light !important; }
+.color-base { color: vr.$color-base !important; }
+.color-white { color: vr.$color-white !important; }
+.color-heading { color: vr.$color-heading !important; }
+.color-subtitle { color: vr.$color-subtitle !important; }
+.color-link { color: vr.$color-link !important; }
+.color-link-hover { color: vr.$color-link-hover !important; }
+.color-sky-light { color: vr.$color-sky-light !important; }
 
 
 /*------------------------------------------------------------------
   	[Background Colors]
 ------------------------------------------------------------------*/
 
-.bg-color-base { background: $color-base !important; }
-.bg-color-white { background: $color-white !important; }
-.bg-color-heading { background: $color-heading !important; }
-.bg-color-subtitle { background: $color-subtitle !important; }
-.bg-color-link { background: $color-link !important; }
-.bg-color-link-hover { background: $color-link-hover !important; }
-.bg-color-sky-light { background: $color-sky-light !important; }
+.bg-color-base { background: vr.$color-base !important; }
+.bg-color-white { background: vr.$color-white !important; }
+.bg-color-heading { background: vr.$color-heading !important; }
+.bg-color-subtitle { background: vr.$color-subtitle !important; }
+.bg-color-link { background: vr.$color-link !important; }
+.bg-color-link-hover { background: vr.$color-link-hover !important; }
+.bg-color-sky-light { background: vr.$color-sky-light !important; }

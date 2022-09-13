@@ -1,3 +1,8 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../mixins' as mx;
+
 /*------------------------------------------------------------------
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
@@ -13,12 +18,12 @@ html, html a, body {
 
 body {
     position: relative;
-    font-family: $font-family-base;
+    font-family: mx.$font-family-base;
 }
 
 p {
-    @include font($size: 15px, $weight: 400, $family: $font-family-base);
-    color: $color-subtitle;
+    @include mx.font($size: 15px, $weight: 400, $family: mx.$font-family-base);
+    color: mx.$color-subtitle;
     line-height: 1.4;
     margin-bottom: 15px;
 }
@@ -26,53 +31,53 @@ p {
 em,
 li,
 li a {
-    @include font($size: 16px, $weight: 500, $family: $font-family-base);
-    color: $color-heading;
+    @include mx.font($size: 16px, $weight: 500, $family: mx.$font-family-base);
+    color: mx.$color-heading;
 }
 
 a {
-    @include font($family: $font-family-base);
-    color: $color-link;
+    @include mx.font($family: mx.$font-family-base);
+    color: mx.$color-link;
     outline: 0;
 
     &:focus,
     &:hover,
     &:active {
         outline: 0;
-        color: $color-link-hover;
+        color: mx.$color-link-hover;
         text-decoration: none;
     }
 }
 
 .link {
     position: relative;
-    @include font($size: 13px, $weight: 600, $family: $font-family-base);
+    @include mx.font($size: 13px, $weight: 600, $family: mx.$font-family-base);
     text-transform: uppercase;
 
     &:after {
-        @include position(absolute, $top: 8px, $right: -15px);
-        @include size(9px, 2px);
-        background: $color-base;
+        @include mx.position(absolute, $top: 8px, $right: -15px);
+        @include mx.size(9px, 2px);
+        background: mx.$color-base;
         content: " ";
     }
 }
 
 span {
-    @include font($size: 14px, $weight: 400, $family: $font-family-base);
+    @include mx.font($size: 14px, $weight: 400, $family: mx.$font-family-base);
     color: #bfc1c7;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @include font($weight: 700, $family: $font-family-base);
-    color: $color-heading;
+    @include mx.font($weight: 700, $family: mx.$font-family-base);
+    color: mx.$color-heading;
     line-height: 1.4;
     margin: 0 0 15px;
 
     > a {
-        color: $color-heading;
+        color: mx.$color-heading;
 
         &:hover {
-            color: $color-link-hover;
+            color: mx.$color-link-hover;
             text-decoration: none;
         }
 
@@ -82,24 +87,24 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-h1 { @include font($size: 40px); }
-h2 { @include font($size: 30px); }
-h3 { @include font($size: 22px); }
-h4 { @include font($size: 22px); }
+h1 { @include mx.font($size: 40px); }
+h2 { @include mx.font($size: 30px); }
+h3 { @include mx.font($size: 22px); }
+h4 { @include mx.font($size: 22px); }
 
 ::selection {
-    color: $color-white;
-    background: $color-base;
+    color: mx.$color-white;
+    background: mx.$color-base;
     text-shadow: none;
 }
 ::-webkit-selection {
-    color: $color-white;
-    background: $color-base;
+    color: mx.$color-white;
+    background: mx.$color-base;
     text-shadow: none;
 }
 ::-moz-selection {
-    color: $color-white;
-    background: $color-base;
+    color: mx.$color-white;
+    background: mx.$color-base;
     text-shadow: none;
 }
 
@@ -115,7 +120,7 @@ h4 { @include font($size: 22px); }
 
 /* Content Wrapper Link */
 .content-wrapper-link {
-    @include position(absolute, $top: 0, $left: 0, $right: 0, $bottom: 0);
+    @include mx.position(absolute, $top: 0, $left: 0, $right: 0, $bottom: 0);
     display: block;
     z-index: 3;
     text-decoration: none;

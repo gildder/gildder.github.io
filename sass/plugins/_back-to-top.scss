@@ -1,29 +1,34 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../mixins' as mx;
+
 /*--------------------------------------------------
     [Back To Top Theme Button]
 ----------------------------------------------------*/
 
 .back-to-top {
-    @include position(fixed, $bottom: 10px, $right: 10px);
+    @include mx.position(fixed, $bottom: 10px, $right: 10px);
     display: inline-block;
     z-index: 9;
-    @include size(40px);
-    @include font($size: 11px, $weight: 400);
-    color: $color-white;
+    @include mx.size(40px);
+    @include mx.font($size: 11px, $weight: 400);
+    color: mx.$color-white;
     text-align: center;
     line-height: 3;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: $color-heading;
-    @include border-radius(3px);
+    background: mx.$color-heading;
+    @include mx.border-radius(3px);
     visibility: hidden;
     opacity: 0;
     padding: 5px;
-    @include translate3d(0,50px,0);
-    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+    @include mx.translate3d(0,50px,0);
+    @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
     &:hover {
-        color: $color-white;
-        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+        color: mx.$color-white;
+        @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
     }
 
     &:focus,
@@ -37,12 +42,12 @@
     &.back-to-top-is-visible {
         visibility: visible;
         opacity: .6;
-        @include translate3d(0,0,0);
-        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+        @include mx.translate3d(0,0,0);
+        @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
         &:hover {
             opacity: 1;
-            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
         }
     }
 }
@@ -54,7 +59,7 @@
 
         &:hover {
             opacity: 1;
-            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
         }
     }
 }

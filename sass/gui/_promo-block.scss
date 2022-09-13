@@ -1,3 +1,8 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../mixins' as mx;
+
 /*------------------------------------------------------------------
   	[Promo Block]
 ------------------------------------------------------------------*/
@@ -6,18 +11,18 @@
 	padding: 220px 0 130px;
 
 	.promo-block-title {
-		@include font($size: 70px);
-		color: $color-white;
+		@include mx.font($size: 70px);
+		color: mx.$color-white;
 		line-height: 1;
 
-		@media (max-width: $screen-xs-min) {
-			@include font($size: 50px);
+		@media (max-width: mx.$screen-xs-min) {
+			@include mx.font($size: 50px);
 		}
 	}
 
 	.promo-block-text {
-		@include font($size: 25px);
-		color: $color-white;
+		@include mx.font($size: 25px);
+		color: mx.$color-white;
 	}
 
 	.promo-block-divider {

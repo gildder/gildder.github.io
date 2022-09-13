@@ -1,3 +1,8 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../mixins' as mx;
+
 /*------------------------------------------------------------------
     [Row]
 ------------------------------------------------------------------*/
@@ -20,7 +25,7 @@
 .container-full-width {
     margin-right: auto;
     margin-left: auto;
-    @include clearfix;
+    @include mx.clearfix;
 }
 
 
@@ -33,18 +38,18 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    @include clearfix;
+    @include mx.clearfix;
 }
 
 /* Media Queries below 768px */
-@media (min-width: $screen-sm-min) {
+@media (min-width: mx.$screen-sm-min) {
     .container-sm {
         width: 750px;
     }
 }
 
 /* Media Queries below 1200px */
-@media (min-width: $screen-lg-min) {
+@media (min-width: mx.$screen-lg-min) {
     .container-sm {
         width: 970px;
     }
@@ -81,7 +86,7 @@
 ------------------------------------------------------------------*/
 
 .full-width {
-    @include size(100%, auto);
+    @include mx.size(100%, auto);
 }
 
 
@@ -89,11 +94,11 @@
     [Font Weight]
 ----------------------------------------------------*/
 
-.fweight-300 { @include font($weight: 300 !important); }
-.fweight-400 { @include font($weight: 400 !important); }
-.fweight-500 { @include font($weight: 500 !important); }
-.fweight-600 { @include font($weight: 600 !important); }
-.fweight-700 { @include font($weight: 700 !important); }
+.fweight-300 { @include mx.font($weight: 300 !important); }
+.fweight-400 { @include mx.font($weight: 400 !important); }
+.fweight-500 { @include mx.font($weight: 500 !important); }
+.fweight-600 { @include mx.font($weight: 600 !important); }
+.fweight-700 { @include mx.font($weight: 700 !important); }
 
 
 /*------------------------------------------------------------------
@@ -153,7 +158,7 @@
     [Top margin below 992px]
 ------------------------------------------------------------------*/
 
-@media (max-width: $screen-md-min) {
+@media (max-width: mx.$screen-md-min) {
     .md-margin-b-0 { margin-bottom: 0 !important; }
     .md-margin-b-4 { margin-bottom: 4px !important; }
     .md-margin-b-5 { margin-bottom: 5px !important; }
@@ -174,7 +179,7 @@
     [Top margin below 768px]
 ------------------------------------------------------------------*/
 
-@media (max-width: $screen-sm-min) {
+@media (max-width: mx.$screen-sm-min) {
     .sm-margin-b-0 { margin-bottom: 0 !important; }
     .sm-margin-b-4 { margin-bottom: 4px !important; }
     .sm-margin-b-5 { margin-bottom: 5px !important; }
@@ -195,7 +200,7 @@
     [Top margin below 480px]
 ------------------------------------------------------------------*/
 
-@media (max-width: $screen-xs-min) {
+@media (max-width: mx.$screen-xs-min) {
     .xs-margin-b-0 { margin-bottom: 0 !important; }
     .xs-margin-b-4 { margin-bottom: 4px !important; }
     .xs-margin-b-5 { margin-bottom: 5px !important; }
@@ -227,7 +232,7 @@
     [Top margin below 992px]
 ------------------------------------------------------------------*/
 
-@media (max-width: $screen-md-min) {
+@media (max-width: mx.$screen-md-min) {
     .md-text-center { text-align: center; }
     .md-text-left { text-align: left; }
     .md-text-right { text-align: right; }
@@ -238,7 +243,7 @@
     [Top margin below 768px]
 ------------------------------------------------------------------*/
 
-@media (max-width: $screen-sm-min) {
+@media (max-width: mx.$screen-sm-min) {
     .sm-text-center { text-align: center; }
     .sm-text-left { text-align: left; }
     .sm-text-right { text-align: right; }
@@ -249,7 +254,7 @@
     [Top margin below 480px]
 ------------------------------------------------------------------*/
 
-@media (max-width: $screen-xs-min) {
+@media (max-width: mx.$screen-xs-min) {
     .xs-text-center { text-align: center; }
     .xs-text-left { text-align: left; }
     .xs-text-right { text-align: right; }

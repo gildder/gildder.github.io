@@ -1,21 +1,26 @@
+// --------------------------------------------------
+// Import
+// --------------------------------------------------
+@use '../mixins' as mx;
+
 /*------------------------------------------------------------------
   	[Form Control]
 ------------------------------------------------------------------*/
 
 .form-control {
   height: 50px;
-  @include font($size: 14px, $weight: 400);
-  color: $color-subtitle;
-  @include placeholder($color-subtitle);
-  //background: $color-sky-light;
+  @include mx.font($size: 14px, $weight: 400);
+  color: mx.$color-subtitle;
+  @include mx.placeholder(mx.$color-subtitle);
+  //background: mx.$color-sky-light;
   border: none;
   box-shadow: none;
-  @include border-radius(0);
+  @include mx.border-radius(0);
   padding-left: 15px;
 
   &:focus {
-    color: $color-heading;
-    @include placeholder($color-heading);
+    color: mx.$color-heading;
+    @include mx.placeholder(mx.$color-heading);
     box-shadow: none;
   }
 }
