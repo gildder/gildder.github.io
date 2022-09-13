@@ -1,9 +1,6 @@
 
 # Created by https://www.gitignore.io/api/rails
 
-# node
-node_modules
-
 ### Rails ###
 *.rbc
 capybara-*.html
@@ -58,6 +55,9 @@ node_modules/
 
 # Visual Code
 .vscode/
+
+# minify css
+*.map
 
 # End of https://www.gitignore.io/api/rails
 
