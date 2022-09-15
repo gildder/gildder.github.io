@@ -36,13 +36,13 @@
             @include mx.position(relative);
             @include mx.size(21px, 1px);
             display: inline-block;
-            background: mx.$color-white;
+            background: mx.$color-heading;
             @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
             &:before,
             &:after {
                 @include mx.position(absolute, $left: 0);
-                background: mx.$color-base;
+                background: mx.$color-heading;
                 content: " ";
             }
 
@@ -63,13 +63,13 @@
 
         &:hover {
             .toggle-icon {
-                background: mx.$color-white;
+                background: mx.$color-base;
                 @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 
                 &:before,
                 &:after {
             		@include mx.size(21px, 1px);
-                    background: mx.$color-white;
+                    background: mx.$color-base;
                 	@include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
                 }
 
@@ -163,7 +163,7 @@
 		@include mx.position(relative);
 		display: block;
 		@include mx.font($size: 13px, $weight: 600, $family: mx.$font-family-base);
-        color: mx.$color-heading;
+        color: mx.$color-white;
 		text-transform: uppercase;
 		line-height: 55px;
 		padding: 20px;
@@ -181,7 +181,7 @@
         &:after {
             @include mx.position(absolute, $top: 45px, $left: 0);
             @include mx.size(9px, 2px);
-            background: mx.$color-white;
+            background: mx.$color-base;
             opacity: 0;
             content: " ";
             @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
@@ -194,7 +194,7 @@
     /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
     .header {
-        background: mx.$color-base;
+        background: mx.$color-white;
 
         .navbar-toggle {
             display: block;
@@ -248,7 +248,7 @@
     /* Navbar Nav */
     .header {
         .nav-item-child {
-            color: mx.$color-base;
+            color: mx.$color-heading;
             line-height: 1.4;
             padding: 12px 12px 12px 15px;
         }
@@ -306,7 +306,7 @@
     .page-on-scroll {
         .header {
             .navbar {
-                background: mx.$color-base;
+                background: mx.$color-white;
                 border-bottom-color: #f0f0f0;
                 @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
@@ -315,14 +315,14 @@
                 display: none;
                 @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
             }
-            
+
             .logo-img-active {
                 display: inline-block;
                 @include mx.cubic-transition($delay: 0, $duration: 400ms, $property: (all));
             }
 
             .nav-item-child {
-                color: mx.$color-white;
+                color: mx.$color-heading;
                 @include mx.cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
         }
