@@ -25,7 +25,7 @@
 }
 
 .btn-default-bg {
-	@include mx.button-color(mx.$color-heading, mx.$color-white, #f3f4f5, mx.$color-base, 0, transparent, transparent);
+	@include mx.button-color(mx.$color-white, mx.$color-white,  mx.$color-base, mx.$color-base-ligth, 0, transparent, transparent);
 }
 
 .btn-theme-sm {
@@ -33,5 +33,5 @@
 }
 
 .btn-theme-md {
-	@include mx.button-size(15px, 600, 20px 30px);
+	@include mx.button-size(15px, 500, 10px 20px);
 }
