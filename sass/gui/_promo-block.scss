@@ -9,25 +9,38 @@
 
 .promo-block {
 	padding: 220px 0 130px;
+	height: 100vh;
 
-	.promo-block-title {
-		@include mx.font($size: 70px);
-		color: mx.$color-white;
-		line-height: 1;
+	.container {		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		height: 100%;
 
-		@media (max-width: mx.$screen-xs-min) {
-			@include mx.font($size: 50px);
+		.promo-block-title {
+			@include mx.font($size: 40px);
+			color: mx.$color-white;
+			line-height: 1;
+			
+			@media (max-width: mx.$screen-xs-min) {
+				@include mx.font($size: 30px);
+			}
 		}
-	}
-
-	.promo-block-text {
-		@include mx.font($size: 25px);
-		color: mx.$color-white;
-	}
-
-	.promo-block-divider {
-		border-bottom: 1px solid rgba(255,255,255,.4);
-		padding-bottom: 20px;
-		margin-bottom: 35px;
+		
+		.promo-block-text {
+			@include mx.font($size: 25px);
+			color: mx.$color-white;
+		}
+		
+		.promo-block-divider {
+			border-bottom: 1px solid rgba(255,255,255,.4);
+			padding-bottom: 20px;
+			margin-bottom: 35px;
+			align-items: center;
+			width: 100%;
+		}
 	}
 }
