@@ -8,7 +8,30 @@
 ------------------------------------------------------------------*/
 
 .footer {
-	.footer-logo {
-		@include mx.size(64px, auto);
+	background: mx.$color-base;
+
+	.follow-me {
+		text-align: center;
+		align-items: center;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		span {
+			@include mx.font($size: 20px, $weight: 400, $family: mx.$font-family-base);
+			color: mx.$color-white;
+		}
+	}
+
+	.social-footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		.list-inline {
+			margin: 10px;
+		}
 	}
 }
