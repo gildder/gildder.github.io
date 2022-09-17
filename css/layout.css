@@ -62,7 +62,7 @@ a:focus, a:hover, a:active {
   right: -15px;
   width: 9px;
   height: 2px;
-  background: #023059;
+  background: #004157;
   content: " ";
 }
 
@@ -109,19 +109,19 @@ h4 {
 
 ::selection {
   color: #fff;
-  background: #023059;
+  background: #004157;
   text-shadow: none;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #023059;
+  background: #004157;
   text-shadow: none;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #023059;
+  background: #004157;
   text-shadow: none;
 }
 
@@ -203,7 +203,7 @@ h4 {
 }
 .btn-white-bg:hover, .btn-white-bg:focus, .btn-white-bg.focus {
   color: #fff;
-  background: #023059;
+  background: #004157;
   border-color: transparent;
 }
 
@@ -220,14 +220,14 @@ h4 {
 }
 
 .btn-default-bg {
-  color: #515769;
-  background: #f3f4f5;
+  color: #fff;
+  background: #004157;
   border-color: transparent;
   border-width: 0;
 }
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
   color: #fff;
-  background: #023059;
+  background: hsl(195deg, 100%, 26%);
   border-color: transparent;
 }
 
@@ -239,8 +239,8 @@ h4 {
 
 .btn-theme-md {
   font-size: 15px;
-  font-weight: 600;
-  padding: 20px 30px;
+  font-weight: 500;
+  padding: 10px 20px;
 }
 
 /*------------------------------------------------------------------
@@ -286,25 +286,37 @@ h4 {
 ------------------------------------------------------------------*/
 .promo-block {
   padding: 220px 0 130px;
+  height: 100vh;
 }
-.promo-block .promo-block-title {
-  font-size: 70px;
+.promo-block .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.promo-block .container .promo-block-title {
+  font-size: 40px;
   color: #fff;
   line-height: 1;
 }
 @media (max-width: 480px) {
-  .promo-block .promo-block-title {
-    font-size: 50px;
+  .promo-block .container .promo-block-title {
+    font-size: 30px;
   }
 }
-.promo-block .promo-block-text {
+.promo-block .container .promo-block-text {
   font-size: 25px;
   color: #fff;
 }
-.promo-block .promo-block-divider {
+.promo-block .container .promo-block-divider {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   padding-bottom: 20px;
   margin-bottom: 35px;
+  align-items: center;
+  width: 100%;
 }
 
 /*------------------------------------------------------------------
@@ -463,9 +475,32 @@ h4 {
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
-.footer .footer-logo {
-  width: 64px;
-  height: auto;
+.footer {
+  background: #004157;
+}
+.footer .follow-me {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .follow-me span {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Hind, sans-serif;
+  color: #fff;
+}
+.footer .social-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .social-footer .list-inline {
+  margin: 10px;
 }
 
 /*------------------------------------------------------------------
@@ -498,7 +533,7 @@ h4 {
   width: 21px;
   height: 1px;
   display: inline-block;
-  background: #fff;
+  background: #515769;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -506,7 +541,7 @@ h4 {
 .header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
   position: absolute;
   left: 0;
-  background: #023059;
+  background: #515769;
   content: " ";
 }
 .header .navbar-toggle .toggle-icon:before {
@@ -532,7 +567,7 @@ h4 {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 .header .navbar-toggle:hover .toggle-icon {
-  background: #fff;
+  background: #004157;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -540,7 +575,7 @@ h4 {
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
   height: 1px;
-  background: #fff;
+  background: #004157;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -618,7 +653,7 @@ h4 {
   font-size: 13px;
   font-weight: 600;
   font-family: Hind, sans-serif;
-  color: #515769;
+  color: #fff;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -638,7 +673,7 @@ h4 {
   left: 0;
   width: 9px;
   height: 2px;
-  background: #fff;
+  background: #004157;
   opacity: 0;
   content: " ";
   transition-duration: 400ms;
@@ -651,7 +686,7 @@ h4 {
   /* Bootstrap collapse of navigation with a maximum width: 991px
   (Change it to any breakpoint you want to be collapsed) */
   .header {
-    background: #023059;
+    background: #fff;
   }
   .header .navbar-toggle {
     display: block;
@@ -690,7 +725,7 @@ h4 {
   }
   /* Navbar Nav */
   .header .nav-item-child {
-    color: #023059;
+    color: #515769;
     line-height: 1.4;
     padding: 12px 12px 12px 15px;
   }
@@ -732,7 +767,7 @@ h4 {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: #023059;
+    background: #fff;
     border-bottom-color: #f0f0f0;
     transition-duration: 300ms;
     transition-property: all;
@@ -751,7 +786,7 @@ h4 {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #fff;
+    color: #515769;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -866,7 +901,7 @@ h4 {
   	[Text Colors]
 ------------------------------------------------------------------*/
 .color-base {
-  color: #023059 !important;
+  color: #004157 !important;
 }
 
 .color-white {
@@ -897,7 +932,7 @@ h4 {
   	[Background Colors]
 ------------------------------------------------------------------*/
 .bg-color-base {
-  background: #023059 !important;
+  background: #004157 !important;
 }
 
 .bg-color-white {
