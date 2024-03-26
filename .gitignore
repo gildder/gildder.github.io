@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/rails
 
 ### Rails ###
@@ -59,5 +58,7 @@ node_modules/
 # minify css
 *.map
 
-# End of https://www.gitignore.io/api/rails
+# ignore .db de images
+*.db
 
+# End of https://www.gitignore.io/api/rails
