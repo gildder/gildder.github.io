@@ -1,7 +1,7 @@
 // --------------------------------------------------
 // Import
 // --------------------------------------------------
-@use '../mixins' as mx;
+@use '../mixins' as mx; // Importamos mixins que ya incluyen variables
 
 /*------------------------------------------------------------------
   	[The "base.scss" contains basic default element styles
@@ -18,11 +18,13 @@ html, html a, body {
 
 body {
     position: relative;
-    font-family: mx.$font-family-base;
+    font-family: mx.$font-secondary;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 p {
-    @include mx.font($size: 15px, $weight: 400, $family: mx.$font-family-base);
+    @include mx.font($size: 15px, $weight: 400, $family: mx.$font-secondary);
     color: mx.$color-subtitle;
     line-height: 1.4;
     margin-bottom: 15px;
@@ -31,12 +33,12 @@ p {
 em,
 li,
 li a {
-    @include mx.font($size: 16px, $weight: 500, $family: mx.$font-family-base);
+    @include mx.font($size: 16px, $weight: 500, $family: mx.$font-secondary);
     color: mx.$color-heading;
 }
 
 a {
-    @include mx.font($family: mx.$font-family-base);
+    @include mx.font($family: mx.$font-secondary);
     color: mx.$color-link;
     outline: 0;
 
@@ -51,7 +53,7 @@ a {
 
 .link {
     position: relative;
-    @include mx.font($size: 13px, $weight: 600, $family: mx.$font-family-base);
+    @include mx.font($size: 13px, $weight: 600, $family: mx.$font-primary);
     text-transform: uppercase;
 
     &:after {
@@ -63,12 +65,12 @@ a {
 }
 
 span {
-    @include mx.font($size: 14px, $weight: 400, $family: mx.$font-family-base);
+    @include mx.font($size: 14px, $weight: 400, $family: mx.$font-secondary);
     color: #bfc1c7;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @include mx.font($weight: 700, $family: mx.$font-family-base);
+    @include mx.font($weight: 700, $family: mx.$font-primary);
     color: mx.$color-heading;
     line-height: 1.4;
     margin: 0 0 15px;

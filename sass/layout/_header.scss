@@ -162,7 +162,7 @@
 	.nav-item-child {
 		@include mx.position(relative);
 		display: block;
-		@include mx.font($size: 13px, $weight: 600, $family: mx.$font-family-base);
+		@include mx.font($size: 13px, $weight: 600, $family: mx.$font-primary);
         color: mx.$color-white;
 		text-transform: uppercase;
 		line-height: 55px;

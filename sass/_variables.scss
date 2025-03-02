@@ -4,18 +4,19 @@
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-base: Hind, sans-serif !default; // Hind font family
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Inter', sans-serif;
 $font-family-sl-icons: Simple-Line-Icons !default; // Simple Line Icons third-party icons plugin
 
 // Colors
-$color-base: #004157 !default;
-$color-base-ligth: hsl(195, 100%, 26%) !default;
-$color-white: #fff !default;
-$color-heading: #515769 !default;
-$color-subtitle: #a6a7aa !default;
-$color-link: #81848f !default;
-$color-link-hover: #999caa !default;
-$color-sky-light: #fafafa !default;
+$color-base: #004157 !default;       // Azul oscuro (se mantiene)
+$color-base-light: #007a99 !default; // Azul más vibrante (más contraste con el base)
+$color-white: #ffffff !default;      // Blanco puro, se mantiene
+$color-heading: #2c3e50 !default;    // Azul grisáceo más oscuro para mejor contraste
+$color-subtitle: #7b8a8b !default;   // Gris con un poco más de saturación, mejor lectura
+$color-link: #0088cc !default;       // Azul más vivo para destacar
+$color-link-hover: #005f87 !default; // Azul oscuro al pasar el mouse
+$color-sky-light: #f4f8fa !default;  // Un gris muy claro para fondos suaves
 
 // ==================================
 // Media queries breakpoints
