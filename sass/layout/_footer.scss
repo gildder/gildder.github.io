@@ -18,7 +18,7 @@
 		flex-direction: column;
 		justify-content: center;
 		span {
-			@include mx.font($size: 20px, $weight: 400, $family: mx.$font-family-base);
+			@include mx.font($size: 20px, $weight: 400, $family: mx.$font-primary);
 			color: mx.$color-white;
 		}
 	}
